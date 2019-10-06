@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1PO4cVHjJJH2mmDtyxyorhcRlVZ" />
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.ProductServiceTest">
+    <configuration name="ProductServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceIT.changeProductQuantity_RepositoryUpdated_ProductQuantityChanged" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
+      <option name="METHOD_NAME" value="changeProductQuantity_RepositoryUpdated_ProductQuantityChanged" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceIT.createProduct_ProductSaved_NameReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
+      <option name="METHOD_NAME" value="createProduct_ProductSaved_NameReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceIT.deleteProductFromRepository_addTwoProductsToRepository_RepositoryUpdated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
+      <option name="METHOD_NAME" value="deleteProductFromRepository_addTwoProductsToRepository_RepositoryUpdated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.openclassrooms.shopmanager.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ProductServiceTest" />
+        <item itemvalue="JUnit.ProductServiceIT" />
+        <item itemvalue="JUnit.ProductServiceIT.createProduct_ProductSaved_NameReturned" />
+        <item itemvalue="JUnit.ProductServiceIT.changeProductQuantity_RepositoryUpdated_ProductQuantityChanged" />
+        <item itemvalue="JUnit.ProductServiceIT.deleteProductFromRepository_addTwoProductsToRepository_RepositoryUpdated" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="" />
+      <created>1565560025983</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565560025983</updated>
+      <workItem from="1565560035409" duration="678000" />
+      <workItem from="1565609381859" duration="1193000" />
+      <workItem from="1565729896201" duration="663000" />
+      <workItem from="1565731907418" duration="345000" />
+      <workItem from="1565784300496" duration="4141000" />
+      <workItem from="1565879218390" duration="1607000" />
+      <workItem from="1567172849345" duration="3356000" />
+      <workItem from="1567446995540" duration="7761000" />
+      <workItem from="1567515815130" duration="2581000" />
+      <workItem from="1567689076208" duration="6736000" />
+      <workItem from="1567764473923" duration="12531000" />
+      <workItem from="1567977396365" duration="3377000" />
+      <workItem from="1568036654324" duration="3193000" />
+      <workItem from="1568065171334" duration="600000" />
+      <workItem from="1568121649457" duration="2550000" />
+      <workItem from="1568224579787" duration="1191000" />
+      <workItem from="1568333197754" duration="1395000" />
+      <workItem from="1568370851667" duration="3979000" />
+      <workItem from="1568467287331" duration="2235000" />
+      <workItem from="1568575216113" duration="3743000" />
+      <workItem from="1568615267218" duration="9622000" />
+      <workItem from="1568756409348" duration="14344000" />
+      <workItem from="1568811181306" duration="14963000" />
+      <workItem from="1569346732351" duration="13174000" />
+      <workItem from="1569414184401" duration="9684000" />
+      <workItem from="1569505696020" duration="4248000" />
+      <workItem from="1569518300620" duration="12394000" />
+      <workItem from="1569719081069" duration="5961000" />
+      <workItem from="1569767988078" duration="1938000" />
+      <workItem from="1569884701542" duration="4093000" />
+      <workItem from="1569936162278" duration="1404000" />
+      <workItem from="1569971264330" duration="9703000" />
+      <workItem from="1570044734639" duration="2560000" />
+      <workItem from="1570139548333" duration="10151000" />
+      <workItem from="1570196408463" duration="1695000" />
+      <workItem from="1570318375753" duration="1201000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java</url>
+          <line>97</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="this" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
