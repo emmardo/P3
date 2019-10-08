@@ -1,23 +1,13 @@
 package com.openclassrooms.shopmanager.product;
 
-import javax.validation.constraints.*;
 
 public class ProductModel {
 
     private Long id;
-
-    @NotBlank(message = "MissingName")
     private String name;            // Required
-
     private String description;
     private String details;
-
-    @NotBlank(message = "MissingQuantity")
-    @Min(1)
     private String  quantity;       // Required, Integer, Greater than zero
-
-    @NotBlank(message = "MissingPrice")
-    @DecimalMin(value = "1.00")
     private String  price;          // Required, Numeric, Greater than zero
 
     public Long getId() {

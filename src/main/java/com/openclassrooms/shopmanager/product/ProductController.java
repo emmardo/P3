@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.Valid;
-import javax.validation.constraints.AssertTrue;
 
 @Controller
 public class ProductController {
@@ -56,27 +55,50 @@ public class ProductController {
         if (productModel.getPrice().isEmpty()) {
             result.reject(productService.getErrorMessages("priceBlank"));
 
-        }else{
-
-            if (productModel.getPrice() == null) {
-            result.reject(productService.getErrorMessages("priceNotADouble"));
-            }
-
-            if(Double.parseDouble(productModel.getPrice()) < 0.00) {
-                result.reject(productService.getErrorMessages("priceNotPositive"));
-            }
         }
 
         if (productModel.getQuantity().isEmpty()) {
             result.reject(productService.getErrorMessages("quantityBlank"));
-        }else{
 
-            if (productModel.getQuantity() == null) {
+        }
+
+        if (!productModel.getPrice().isEmpty()) {
+
+            try {
+
+                Double.parseDouble(productModel.getPrice());
+
+                if (productModel.getPrice() == null) {
+                    result.reject(productService.getErrorMessages("priceNotADouble"));
+                }
+
+                if (Double.parseDouble(productModel.getPrice()) < 0.01) {
+                    result.reject(productService.getErrorMessages("priceNotPositive"));
+                }
+
+            } catch (NumberFormatException e) {
+                result.reject(productService.getErrorMessages("priceNotADouble"));
+            }
+        }
+
+        if (!productModel.getQuantity().isEmpty()){
+
+            try {
+
+                Integer.parseInt(productModel.getQuantity());
+
+                if (productModel.getQuantity() == null) {
+                    result.reject(productService.getErrorMessages("quantityNotAnInteger"));
+                }
+
+                if (Integer.parseInt(productModel.getQuantity()) < 1) {
+                    result.reject(productService.getErrorMessages("quantityNotPositive"));
+                }
+
+            } catch (NumberFormatException e) {
                 result.reject(productService.getErrorMessages("quantityNotAnInteger"));
             }
-            if (Integer.parseInt(productModel.getQuantity()) < 0) {
-            result.reject(productService.getErrorMessages("quantityNotPositive"));
-        }
+
         }
 
         //TODO implement form fields validation using the standard annotations in ProductModel class

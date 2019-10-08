@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Optional;
 
 @Service
@@ -41,9 +40,8 @@ public class ProductService {
         return productRepository.findById(productId).get();
     }
 
-    public void createProduct(ProductModel productModel) {
+    public void createProduct(ProductModel productModel){
         Product product = new Product();
-        /*product.setId(productModel.getId());*/
         product.setDescription(productModel.getDescription());
         product.setDetails(productModel.getDetails());
         product.setName(productModel.getName());
@@ -80,9 +78,9 @@ public class ProductService {
     public void setErrorMessages() {
         errorMessages.put("nameBlank", "NotBlank.name");
         errorMessages.put("priceBlank", "NotBlank.price");
+        errorMessages.put("quantityBlank", "NotBlank.quantity");
         errorMessages.put("priceNotADouble", "NotADouble.price");
         errorMessages.put("priceNotPositive", "NotAPositiveNumber.price");
-        errorMessages.put("quantityBlank", "NotBlank.quantity");
         errorMessages.put("quantityNotAnInteger", "NotAnInteger.quantity");
         errorMessages.put("quantityNotPositive", "NotAPositiveNumber.quantity");
     }
