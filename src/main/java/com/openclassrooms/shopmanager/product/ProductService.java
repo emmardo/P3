@@ -52,21 +52,21 @@ public class ProductService {
         productRepository.save(product);
     }
 
-    private OrderService orderService;
+    /*private OrderService orderService;*/
 
     public void deleteProduct(Long productId) {
 
-        if(orderService.getCart().findProductInCartLines(productId) == null)/*getCartLineList().stream()
+        /*if(orderService.getCart().findProductInCartLines(productId) == null)*//*getCartLineList().stream()
             .filter(cartLine -> cartLine.getProduct().getId()==productId)
-            .findFirst().get() != null*/ {
+            .findFirst().get() != null*//* {
             // TODO what happens if a product has been added to a cart and has been later removed from the inventory ?
             // delete the product form the cart by using the specific method
             // => the choice is up to the student
-            orderService.removeFromCart(productId);
+            orderService.removeFromCart(productId);*/
 
             productRepository.deleteById(productId);
-        }
     }
+
 
     public void updateProductQuantities(Cart cart) {
 

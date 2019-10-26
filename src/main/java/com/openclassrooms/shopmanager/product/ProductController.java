@@ -1,5 +1,6 @@
 package com.openclassrooms.shopmanager.product;
 
+import com.openclassrooms.shopmanager.order.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -113,9 +114,18 @@ public class ProductController {
         }
     }
 
+    @Autowired
+    private OrderService orderService;
+
     @PostMapping("/admin/deleteProduct")
-    public String deleteProduct(@RequestParam("delProductId") Long delProductId,Model model)
-    {
+    public String deleteProduct(@RequestParam("delProductId") Long delProductId,Model model) {
+
+        if(orderService.getCart().findProductInCartLines(delProductId)
+            != null) {
+
+            orderService.removeFromCart(delProductId);
+        }
+
         productService.deleteProduct(delProductId);
         model.addAttribute("products", productService.getAllAdminProducts());
 
