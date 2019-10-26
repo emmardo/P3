@@ -2,6 +2,7 @@ package com.openclassrooms.shopmanager.product;
 
 import com.openclassrooms.shopmanager.order.Cart;
 import com.openclassrooms.shopmanager.order.CartLine;
+import com.openclassrooms.shopmanager.order.OrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,11 +52,20 @@ public class ProductService {
         productRepository.save(product);
     }
 
+    private OrderService orderService;
+
     public void deleteProduct(Long productId) {
-        // TODO what happens if a product has been added to a cart and has been later removed from the inventory ?
-        // delete the product form the cart by using the specific method
-        // => the choice is up to the student
-        productRepository.deleteById(productId);
+
+        if(orderService.getCart().findProductInCartLines(productId) == null)/*getCartLineList().stream()
+            .filter(cartLine -> cartLine.getProduct().getId()==productId)
+            .findFirst().get() != null*/ {
+            // TODO what happens if a product has been added to a cart and has been later removed from the inventory ?
+            // delete the product form the cart by using the specific method
+            // => the choice is up to the student
+            orderService.removeFromCart(productId);
+
+            productRepository.deleteById(productId);
+        }
     }
 
     public void updateProductQuantities(Cart cart) {

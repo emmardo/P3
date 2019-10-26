@@ -48,7 +48,7 @@ public class ProductController {
     {
         productService.setErrorMessages();
 
-        if (productModel.getName().isEmpty()) {
+        if (productModel.getName().isEmpty() || productModel.getName().isBlank()) {
             result.reject(productService.getErrorMessages("nameBlank"));
         }
 
