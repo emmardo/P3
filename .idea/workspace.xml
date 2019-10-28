@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/openclassrooms/shopmanager/product/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/openclassrooms/shopmanager/product/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/openclassrooms/shopmanager/product/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/openclassrooms/shopmanager/product/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,70 +66,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="ProductServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P3_AddNewFunctionalitySpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceIT.createProduct_ProductSaved_NameReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P3_AddNewFunctionalitySpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
-      <option name="METHOD_NAME" value="createProduct_ProductSaved_NameReturned" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceIT.createProduct_ProductsSaved_ProductsNamesObtained" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P3_AddNewFunctionalitySpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
-      <option name="METHOD_NAME" value="createProduct_ProductsSaved_ProductsNamesObtained" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceIT.deleteProduct_TwoProductsInRepository_RepositoryUpdated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P3_AddNewFunctionalitySpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
-      <option name="METHOD_NAME" value="deleteProduct_TwoProductsInRepository_RepositoryUpdated" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProductServiceTest.createProduct_DbHasData_allDataReturned">
     <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
@@ -147,6 +82,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductServiceTest.createProduct_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
+      <option name="METHOD_NAME" value="createProduct_DbHasData_allDataReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.getAllAdminProducts_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
+      <option name="METHOD_NAME" value="getAllAdminProducts_DbHasData_allDataReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.getAllProducts_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
+      <option name="METHOD_NAME" value="getAllProducts_DbHasData_allDataReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.getByProductId_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
+      <option name="METHOD_NAME" value="getByProductId_DbHasData_allDataReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.openclassrooms.shopmanager.Application" />
@@ -156,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductServiceTest.createProduct_DbHasData_allDataReturned" />
+        <item itemvalue="JUnit.ProductServiceTest.getByProductId_DbHasData_allDataReturned" />
+        <item itemvalue="JUnit.ProductServiceTest.getAllAdminProducts_DbHasData_allDataReturned" />
+        <item itemvalue="JUnit.ProductServiceTest.getAllProducts_DbHasData_allDataReturned" />
         <item itemvalue="JUnit.ProductServiceTest" />
-        <item itemvalue="JUnit.ProductServiceIT.createProduct_ProductsSaved_ProductsNamesObtained" />
-        <item itemvalue="JUnit.ProductServiceIT.deleteProduct_TwoProductsInRepository_RepositoryUpdated" />
-        <item itemvalue="JUnit.ProductServiceIT" />
-        <item itemvalue="JUnit.ProductServiceIT.createProduct_ProductSaved_NameReturned" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +224,8 @@
       <workItem from="1572040354620" duration="275000" />
       <workItem from="1572094508095" duration="10600000" />
       <workItem from="1572119086856" duration="2711000" />
-      <workItem from="1572121859250" duration="4200000" />
+      <workItem from="1572121859250" duration="5378000" />
+      <workItem from="1572272203422" duration="6069000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -241,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572122067802</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Corrected the Admin incoherencies when deleting a product from the repository if it was added to a cart">
+      <created>1572126154771</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572126154771</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,7 +269,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Keep working on bugs in ProductService and ProductController" />
-    <option name="LAST_COMMIT_MESSAGE" value="Keep working on bugs in ProductService and ProductController" />
+    <MESSAGE value="Corrected the Admin incoherencies when deleting a product from the repository if it was added to a cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected the Admin incoherencies when deleting a product from the repository if it was added to a cart" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

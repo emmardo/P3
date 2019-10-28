@@ -6,8 +6,11 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Optional;
+import java.util.stream.Collectors;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
@@ -51,8 +54,88 @@ public class ProductServiceTest {
         assertEquals(2L, products.get(1).getId() , 0);
     }
 
+    @Test
+    public void getAllAdminProducts_DbHasData_allDataReturned(){
+
+        Product product1 = new Product();
+        product1.setId(1L);
+        product1.setName("First product");
+
+        Product product2 = new Product();
+        product2.setId(2L);
+        product2.setName("First product");
+
+        when(productRepository.findAllByOrderByIdDesc()).thenReturn(Arrays.asList(product1, product2));
+
+        List<Product> products = productService.getAllAdminProducts();
+
+        assertEquals(2, products.size());
+        assertEquals(1L, products.get(0).getId() , 0);
+        assertEquals(2L, products.get(1).getId() , 0);
+
+    }
 
     @Test
+    public void getByProductId_DbHasData_allDataReturned(){
+
+        Product expectedProduct = new Product();
+        expectedProduct.setId(1L);
+        expectedProduct.setName("First product");
+
+        when(productRepository.findById(expectedProduct.getId())).thenReturn(Optional.of(expectedProduct));
+
+        Product resultingProduct = productService.getByProductId(expectedProduct.getId());
+
+        assertEquals(expectedProduct.getId(), resultingProduct.getId());
+        assertEquals("First product", expectedProduct.getName());
+
+    }
+
+    @Test
+    public void createProduct_DbHasData_allDataReturned(){
+
+        ProductModel productModel = new ProductModel();
+
+        productModel.setDescription("Description");
+        productModel.setDetails("Detail");
+        productModel.setName("Name");
+        productModel.setPrice("1.00");
+        productModel.setQuantity("10");
+
+        Product product = new Product();
+        product.setDescription(productModel.getDescription());
+        product.setDetails(productModel.getDetails());
+        product.setName(productModel.getName());
+        product.setPrice(Double.parseDouble(productModel.getPrice()));
+        product.setQuantity(Integer.parseInt(productModel.getQuantity()));
+
+        List<Product> list = new ArrayList<>();
+        list.add(product);
+
+        when(productRepository.findAll()).thenReturn(list);
+
+        productService.createProduct(productModel);
+
+        assertEquals(productService.getAllProducts().stream().filter(productInstance ->
+                        productInstance.getName()=="Name").findFirst().get()
+                        .getName(),"Name");
+        assertEquals(productRepository.findAll().stream().filter(productInstance ->
+                        productInstance.getQuantity()==10).findFirst().get()
+                        .getQuantity(),10);
+
+    }
+
+    @Test
+    public void deleteProduct_DbHasData_allDataReturned(){
+
+    }
+
+    @Test
+    public void updateProductQuantities_DbHasData_allDataReturned(){
+
+    }
+
+   /* @Test
     public void getMissingNameErrorMessage_HasData_ReturnsErrorMessage(){
         //Arrange
         String expectedMessage = "NotBlank.name";
@@ -162,6 +245,6 @@ public class ProductServiceTest {
 
         //Assert
         assertEquals(expectedMessage,returnedMessage);
-    }
+    }*/
 
 }
