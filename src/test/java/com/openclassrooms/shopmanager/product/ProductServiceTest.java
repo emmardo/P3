@@ -5,6 +5,11 @@ import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -119,7 +124,7 @@ public class ProductServiceTest {
         assertEquals(productService.getAllProducts().stream().filter(productInstance ->
                         productInstance.getName()=="Name").findFirst().get()
                         .getName(),"Name");
-        assertEquals(productRepository.findAll().stream().filter(productInstance ->
+        assertEquals(productService.getAllProducts().stream().filter(productInstance ->
                         productInstance.getQuantity()==10).findFirst().get()
                         .getQuantity(),10);
 
@@ -128,6 +133,56 @@ public class ProductServiceTest {
     @Test
     public void deleteProduct_DbHasData_allDataReturned(){
 
+        ProductRepository productRepository1;
+
+        ProductModel productModel1 = new ProductModel();
+
+        productModel1.setDescription("Description1");
+        productModel1.setDetails("Detail1");
+        productModel1.setName("Name1");
+        productModel1.setPrice("1.00");
+        productModel1.setQuantity("10");
+
+        ProductModel productModel2 = new ProductModel();
+
+        productModel2.setDescription("Description2");
+        productModel2.setDetails("Detail2");
+        productModel2.setName("Name2");
+        productModel2.setPrice("2.00");
+        productModel2.setQuantity("20");
+
+        Product product1 = new Product();
+        product1.setDescription(productModel1.getDescription());
+        product1.setDetails(productModel1.getDetails());
+        product1.setName(productModel1.getName());
+        product1.setPrice(Double.parseDouble(productModel1.getPrice()));
+        product1.setQuantity(Integer.parseInt(productModel1.getQuantity()));
+        product1.setId(1L);
+
+        Product product2 = new Product();
+        product2.setDescription(productModel2.getDescription());
+        product2.setDetails(productModel2.getDetails());
+        product2.setName(productModel2.getName());
+        product2.setPrice(Double.parseDouble(productModel2.getPrice()));
+        product2.setQuantity(Integer.parseInt(productModel2.getQuantity()));
+        product2.setId(2L);
+
+        List<Product> list = new ArrayList<>();
+        list.add(product1);
+        list.add(product2);
+
+        when(productRepository.deleteById(1L)).thenReturn(Optional.of(product1));
+        when(productRepository.findAll()).thenReturn(list);
+        /*when(productService.deleteProduct(1L)).thenReturn(list.remove(product1));*/
+
+        productService.createProduct(productModel1);
+        productService.createProduct(productModel2);
+
+        assertEquals(2,productRepository.findAll().size());
+
+        productService.deleteProduct(1L);
+
+        assertEquals(1,productService.getAllProducts().size());
     }
 
     @Test

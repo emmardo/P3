@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/openclassrooms/shopmanager/product/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/openclassrooms/shopmanager/product/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,22 +67,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductServiceTest.createProduct_DbHasData_allDataReturned">
-    <configuration name="ProductServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P3_AddNewFunctionalitySpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProductServiceTest.deleteProduct_DbHasData_allDataReturned">
     <configuration name="ProductServiceTest.createProduct_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
@@ -93,6 +79,22 @@
       <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
       <option name="METHOD_NAME" value="createProduct_DbHasData_allDataReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.deleteProduct_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
+      <option name="METHOD_NAME" value="deleteProduct_DbHasData_allDataReturned" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -155,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductServiceTest.deleteProduct_DbHasData_allDataReturned" />
         <item itemvalue="JUnit.ProductServiceTest.createProduct_DbHasData_allDataReturned" />
         <item itemvalue="JUnit.ProductServiceTest.getByProductId_DbHasData_allDataReturned" />
         <item itemvalue="JUnit.ProductServiceTest.getAllAdminProducts_DbHasData_allDataReturned" />
         <item itemvalue="JUnit.ProductServiceTest.getAllProducts_DbHasData_allDataReturned" />
-        <item itemvalue="JUnit.ProductServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +227,7 @@
       <workItem from="1572094508095" duration="10600000" />
       <workItem from="1572119086856" duration="2711000" />
       <workItem from="1572121859250" duration="5378000" />
-      <workItem from="1572272203422" duration="6069000" />
+      <workItem from="1572272203422" duration="9721000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -248,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572126154771</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Halfway finished Unit tests for Product">
+      <created>1572280054785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572280054785</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +279,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Keep working on bugs in ProductService and ProductController" />
     <MESSAGE value="Corrected the Admin incoherencies when deleting a product from the repository if it was added to a cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected the Admin incoherencies when deleting a product from the repository if it was added to a cart" />
+    <MESSAGE value="Halfway finished Unit tests for Product" />
+    <option name="LAST_COMMIT_MESSAGE" value="Halfway finished Unit tests for Product" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
