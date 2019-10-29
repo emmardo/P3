@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceTest.java" afterDir="false" />
+    <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="Made addProductToCart test work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -229,7 +227,8 @@
       <workItem from="1572121859250" duration="5378000" />
       <workItem from="1572272203422" duration="13467000" />
       <workItem from="1572356474185" duration="596000" />
-      <workItem from="1572363661788" duration="4546000" />
+      <workItem from="1572363661788" duration="9280000" />
+      <workItem from="1572384910718" duration="1757000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -266,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572284362847</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Trying to finish Unit tests">
+      <created>1572368287994</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572368287994</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,18 +296,11 @@
     <MESSAGE value="Corrected the Admin incoherencies when deleting a product from the repository if it was added to a cart" />
     <MESSAGE value="Halfway finished Unit tests for Product" />
     <MESSAGE value="almost finished with the Product class' Unit tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost finished with the Product class' Unit tests" />
+    <MESSAGE value="Trying to finish Unit tests" />
+    <MESSAGE value="Made addProductToCart test work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made addProductToCart test work" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductService.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="this" />
