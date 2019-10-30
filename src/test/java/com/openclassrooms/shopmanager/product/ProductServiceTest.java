@@ -1,5 +1,8 @@
 package com.openclassrooms.shopmanager.product;
 
+import com.openclassrooms.shopmanager.order.Cart;
+import com.openclassrooms.shopmanager.order.CartLine;
+import com.openclassrooms.shopmanager.order.Order;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
@@ -179,6 +182,67 @@ public class ProductServiceTest {
 
     @Test
     public void updateProductQuantities_DbHasData_allDataReturned(){
+
+        List<Product> repositoryMock = new ArrayList<>();
+
+        Order order1 = new Order();
+
+        List<Order> orderList = new ArrayList<>();
+        orderList.add(order1);
+
+        Product product = new Product();
+        product.setId(5L);
+        product.setName("Name");
+        product.setDescription("Description");
+        product.setDetails("Detail");
+        product.setQuantity(10);
+        product.setPrice(1.00);
+
+        CartLine cartLine = new CartLine();
+        cartLine.setProduct(product);
+        cartLine.setQuantity(1);
+
+        List<CartLine> cartLines = new ArrayList<>();
+        cartLines.add(cartLine);
+
+        Cart cart = new Cart();
+        cart.addItem(product,2);
+
+        when(productService.getAllProducts()).thenReturn(repositoryMock);
+
+
+        productService.getAllProducts().add(product);
+        productService.getAllProducts().add(product);
+        productService.getAllProducts().add(product);
+        productService.getAllProducts().add(product);
+        productService.getAllProducts().add(product);
+
+        assertEquals(5, productService.getAllProducts().size());
+
+        productService.updateProductQuantities(cart);
+
+        if(productService.getAllProducts().stream().filter(p -> p.getId()==5L).findFirst().get()
+            != null){
+            productService.getAllProducts().remove(product);
+        }
+
+        assertEquals(4,productService.getAllProducts().size());
+        assertEquals(1, orderList.size());
+        assertEquals(product, cart.findProductInCartLines(5L));
+        assertEquals(10, cart.findProductInCartLines(5L).getQuantity());
+
+
+        /*updateProductQuantities(Cart cart) {
+
+            for (CartLine cartLine : cart.getCartLineList()) {
+                Optional<Product> productOptional = productRepository.findById(cartLine.getProduct().getId());
+                if (productOptional.isPresent()) {
+                    Product product = productOptional.get();
+                    product.setQuantity(product.getQuantity() - cartLine.getQuantity());
+                    if (product.getQuantity() < 1) {
+                        productRepository.delete(product);
+                    } else {
+                        productRepository.save(product);*/
 
     }
 
