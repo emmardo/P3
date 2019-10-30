@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,8 +67,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductServiceTest.updateProductQuantities_DbHasData_allDataReturned">
-    <configuration name="OrderServiceTest.createOrder_dhdjdj_jsjsjsj" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ProductServiceIT.createProduct_TwoProductsCreated_ProductsNamesObtained">
+    <configuration name="ProductServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
         <pattern>
@@ -75,8 +77,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.OrderServiceTest" />
-      <option name="METHOD_NAME" value="createOrder_dhdjdj_jsjsjsj" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceIT.createProduct_TwoProductsCreated_ProductsNamesObtained" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
+      <option name="METHOD_NAME" value="createProduct_TwoProductsCreated_ProductsNamesObtained" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -97,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceTest.deleteProduct_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceTest.getErrorMessage_ndndhnd_hshshs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
         <pattern>
@@ -107,13 +124,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
-      <option name="METHOD_NAME" value="deleteProduct_DbHasData_allDataReturned" />
+      <option name="METHOD_NAME" value="getErrorMessage_ndndhnd_hshshs" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductServiceTest.getAllProducts_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductServiceTest.setErrorMessages_jdjhdjd_jnjdjd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
         <pattern>
@@ -123,23 +140,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
-      <option name="METHOD_NAME" value="getAllProducts_DbHasData_allDataReturned" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductServiceTest.updateProductQuantities_DbHasData_allDataReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P3_AddNewFunctionalitySpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceTest" />
-      <option name="METHOD_NAME" value="updateProductQuantities_DbHasData_allDataReturned" />
+      <option name="METHOD_NAME" value="setErrorMessages_jdjhdjd_jnjdjd" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductServiceTest.updateProductQuantities_DbHasData_allDataReturned" />
-        <item itemvalue="JUnit.ProductServiceTest.deleteProduct_DbHasData_allDataReturned" />
+        <item itemvalue="JUnit.ProductServiceIT.createProduct_TwoProductsCreated_ProductsNamesObtained" />
+        <item itemvalue="JUnit.ProductServiceIT" />
+        <item itemvalue="JUnit.ProductServiceTest.getErrorMessage_ndndhnd_hshshs" />
         <item itemvalue="JUnit.ProductServiceTest" />
-        <item itemvalue="JUnit.ProductServiceTest.getAllProducts_DbHasData_allDataReturned" />
-        <item itemvalue="JUnit.OrderServiceTest.createOrder_dhdjdj_jsjsjsj" />
+        <item itemvalue="JUnit.ProductServiceTest.setErrorMessages_jdjhdjd_jnjdjd" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +229,7 @@
       <workItem from="1572356474185" duration="596000" />
       <workItem from="1572363661788" duration="9280000" />
       <workItem from="1572384910718" duration="11941000" />
-      <workItem from="1572439848660" duration="2101000" />
+      <workItem from="1572439848660" duration="9904000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -300,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572397878738</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Finished all Unit tests">
+      <created>1572443289903</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572443289903</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,7 +336,8 @@
     <MESSAGE value="Made addProductToCart test work" />
     <MESSAGE value="Finished OrderService Unit tests" />
     <MESSAGE value="Almost finished ProductServiceTest" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost finished ProductServiceTest" />
+    <MESSAGE value="Finished all Unit tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished all Unit tests" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

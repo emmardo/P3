@@ -2,18 +2,13 @@ package com.openclassrooms.shopmanager.product;
 
 import com.openclassrooms.shopmanager.order.Cart;
 import com.openclassrooms.shopmanager.order.CartLine;
-import com.openclassrooms.shopmanager.order.Order;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
@@ -36,7 +31,7 @@ public class ProductServiceTest {
     ProductRepository productRepository;
 
     @Test
-    public void getAllProducts_DbHasData_allDataReturned(){
+    public void getAllProducts_DbHasData_allDataReturned() {
         //Arrange
         Product product1 = new Product();
         product1.setId(1L);
@@ -58,7 +53,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void getAllAdminProducts_DbHasData_allDataReturned(){
+    public void getAllAdminProducts_DbHasData_allDataReturned() {
 
         Product product1 = new Product();
         product1.setId(1L);
@@ -79,7 +74,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void getByProductId_DbHasData_allDataReturned(){
+    public void getByProductId_DbHasData_allDataReturned() {
 
         Product expectedProduct = new Product();
         expectedProduct.setId(1L);
@@ -95,7 +90,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void createProduct_DbHasData_allDataReturned(){
+    public void createProduct_DbHasData_allDataReturned() {
 
         ProductModel productModel = new ProductModel();
 
@@ -129,7 +124,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void deleteProduct_DbHasData_allDataReturned(){
+    public void deleteProduct_DbHasData_allDataReturned() {
 
         ProductModel productModel1 = new ProductModel();
 
@@ -181,7 +176,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void updateProductQuantities_DbHasData_allDataReturned(){
+    public void updateProductQuantities_DbHasData_allDataReturned() {
 
         List<Product> repositoryMock = new ArrayList<>();
 
@@ -232,130 +227,48 @@ public class ProductServiceTest {
         assertEquals(15, cart.findProductInCartLines(product.getId()).getQuantity());
         assertEquals(product, cart.findProductInCartLines(5L));
         assertEquals("Name", productService.getAllProducts().get(0).getName());
-        /*updateProductQuantities(Cart cart) {
 
-            for (CartLine cartLine : cart.getCartLineList()) {
-                Optional<Product> productOptional = productRepository.findById(cartLine.getProduct().getId());
-                if (productOptional.isPresent()) {
-                    Product product = productOptional.get();
-                    product.setQuantity(product.getQuantity() - cartLine.getQuantity());
-                    if (product.getQuantity() < 1) {
-                        productRepository.delete(product);
-                    } else {
-                        productRepository.save(product);*/
-
-    }
-
-    /*@Test
-    public void getMissingNameErrorMessage_HasData_ReturnsErrorMessage(){
-        //Arrange
-        String expectedMessage = "NotBlank.name";
-
-        String key = "nameBlank";
-
-        //Act
-        productService.setErrorMessages();
-
-        String returnedMessage = productService.getErrorMessages(key);
-
-        //Assert
-        assertEquals(expectedMessage,returnedMessage);
     }
 
     @Test
-    public void getMissingPriceErrorMessage_HasData_ReturnsErrorMessage(){
-        //Arrange
-        String expectedMessage = "NotBlank.price";
+    public void setErrorMessages_jdjhdjd_jnjdjd() {
 
-        String key = "priceBlank";
+        HashMap<String, String> errorMessages = new HashMap<>();
 
-        //Act
-        productService.setErrorMessages();
+        errorMessages.put("nameBlank", "NotBlank.name");
+        errorMessages.put("priceBlank", "NotBlank.price");
+        errorMessages.put("quantityBlank", "NotBlank.quantity");
+        errorMessages.put("priceNotADouble", "NotADouble.price");
+        errorMessages.put("priceNotPositive", "NotAPositiveNumber.price");
+        errorMessages.put("quantityNotAnInteger", "NotAnInteger.quantity");
+        errorMessages.put("quantityNotPositive", "NotAPositiveNumber.quantity");
 
-        String returnedMessage = productService.getErrorMessages(key);
-
-        //Assert
-        assertEquals(expectedMessage,returnedMessage);
+        assertEquals(7, errorMessages.size());
+        assertEquals("NotBlank.name", errorMessages.get("nameBlank"));
     }
 
     @Test
-    public void getMissingQuantityErrorMessage_HasData_ReturnsErrorMessage(){
-        //Arrange
-        String expectedMessage = "NotBlank.quantity";
+    public void getErrorMessage_ndndhnd_hshshs() {
 
-        String key = "quantityBlank";
+        String key;
 
-        //Act
-        productService.setErrorMessages();
+        HashMap<String, String> errorMessages = new HashMap<>();
 
-        String returnedMessage = productService.getErrorMessages(key);
+        errorMessages.put("nameBlank", "NotBlank.name");
+        errorMessages.put("priceBlank", "NotBlank.price");
+        errorMessages.put("quantityBlank", "NotBlank.quantity");
+        errorMessages.put("priceNotADouble", "NotADouble.price");
+        errorMessages.put("priceNotPositive", "NotAPositiveNumber.price");
+        errorMessages.put("quantityNotAnInteger", "NotAnInteger.quantity");
+        errorMessages.put("quantityNotPositive", "NotAPositiveNumber.quantity");
 
-        //Assert
-        assertEquals(expectedMessage,returnedMessage);
+        key = "nameBlank";
+
+        assertEquals("NotBlank.name", errorMessages.get(key));
+
+        key = "quantityNotPositive";
+
+        assertEquals("NotAPositiveNumber.quantity", errorMessages.get(key));
+
     }
-
-    @Test
-    public void getNotADoubleErrorMessage_HasData_ReturnsErrorMessage(){
-        //Arrange
-        String expectedMessage = "NotADouble.price";
-
-        String key = "priceNotADouble";
-
-        //Act
-        productService.setErrorMessages();
-
-        String returnedMessage = productService.getErrorMessages(key);
-
-        //Assert
-        assertEquals(expectedMessage,returnedMessage);
-    }
-
-    @Test
-    public void getNotAPositiveNumberErrorMessage_HasData_ReturnsErrorMessage(){
-        //Arrange
-        String expectedMessage = "NotAPositiveNumber.price";
-
-        String key = "priceNotPositive";
-
-        //Act
-        productService.setErrorMessages();
-
-        String returnedMessage = productService.getErrorMessages(key);
-
-        //Assert
-        assertEquals(expectedMessage,returnedMessage);
-    }
-
-    @Test
-    public void getNotAnIntegerErrorMessage_HasData_ReturnsErrorMessage(){
-        //Arrange
-        String expectedMessage = "NotAnInteger.quantity";
-
-        String key = "quantityNotAnInteger";
-
-        //Act
-        productService.setErrorMessages();
-
-        String returnedMessage = productService.getErrorMessages(key);
-
-        //Assert
-        assertEquals(expectedMessage,returnedMessage);
-    }
-
-    @Test
-    public void getNotAPositiveErrorMessage_HasData_ReturnsErrorMessage(){
-        //Arrange
-        String expectedMessage = "NotAPositiveNumber.quantity";
-
-        String key = "quantityNotPositive";
-
-        //Act
-        productService.setErrorMessages();
-
-        String returnedMessage = productService.getErrorMessages(key);
-
-        //Assert
-        assertEquals(expectedMessage,returnedMessage);
-    }*/
-
 }

@@ -1,10 +1,8 @@
 package com.openclassrooms.shopmanager.product;
 
+import com.openclassrooms.shopmanager.order.Cart;
+import com.openclassrooms.shopmanager.order.CartLine;
 import org.junit.Test;
-import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,85 +10,32 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
-@RunWith(MockitoJUnitRunner.class)
 public class ProductServiceIT {
 
-    @InjectMocks
-    ProductService productService;
+    private ProductRepository productRepository;
 
-    @Mock
-    ProductRepository productRepository;
+    private ProductService productService;
 
+    public ProductServiceIT(ProductRepository productRepository/*, ProductService productService*/) {
 
-    @Test
-    public void createProduct_TwoProductsCreated_ProductsNamesObtained(){
-        //Arrange
-        Product product1 = new Product();
-        product1.setName("Product1");
-
-        Product product2 = new Product();
-        product2.setName("Product2");
-
-        List<Product> list = new ArrayList<>();
-
-        list.add(product1);
-        list.add(product2);
-
-        //Act
-        when(productRepository.findAll()).thenReturn(list);
-
-        List<Product> products = productService.getAllProducts();
-
-        //Assert
-        assertEquals(2, products.size());
-        assertEquals("Product1", products.get(0).getName());
-        assertEquals("Product2", products.get(1).getName());
-
+        this.productRepository = productRepository;
+        /*this.productService = productService;*/
     }
 
-
     @Test
-    public void deleteProduct_TwoProductsInRepository_RepositoryUpdated(){
-        //Arrange
-        String expectedName = "Product2";
-        int expectedRepositorySize = 1;
+    public void createProduct_TwoProductsCreated_ProductsNamesObtained() {
 
-        Product product1 = new Product();
-        product1.setName("Product1");
-        product1.setPrice(1.50);
-        product1.setDetails("Detail1");
-        product1.setDescription("Description1");
-        product1.setQuantity(1);
+        ProductModel productModel = new ProductModel();
 
-        Product product2 = new Product();
-        product2.setName("Product2");
-        product2.setPrice(1.50);
-        product2.setDetails("Detail2");
-        product2.setDescription("Description2");
-        product2.setQuantity(1);
+        productModel.setDescription("Description");
+        productModel.setDetails("Detail");
+        productModel.setName("Name");
+        productModel.setPrice("1.00");
+        productModel.setQuantity("50");
+        productModel.setId(1L);
 
-        List<Product> list = new ArrayList<>();
+        productService.createProduct(productModel);
 
-        list.add(product1);
-        list.add(product2);
-
-        //Act
-        when(productRepository.findAll()).thenReturn(list);
-
-        List<Product> products = productService.getAllProducts();
-
-        products.remove(0);
-
-        String deletedProductsName = products.get(0).getName();
-
-        int repositorySize = products.size();
-
-        //Assert
-        assertEquals(expectedName, deletedProductsName);
-        assertEquals(expectedRepositorySize, repositorySize);
-
+        assertEquals("Name", productService.getByProductId(1L).getName());
     }
-
-
-
 }
