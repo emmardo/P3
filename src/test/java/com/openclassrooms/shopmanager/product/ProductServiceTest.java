@@ -185,17 +185,12 @@ public class ProductServiceTest {
 
         List<Product> repositoryMock = new ArrayList<>();
 
-        Order order1 = new Order();
-
-        List<Order> orderList = new ArrayList<>();
-        orderList.add(order1);
-
         Product product = new Product();
         product.setId(5L);
         product.setName("Name");
         product.setDescription("Description");
         product.setDetails("Detail");
-        product.setQuantity(10);
+        product.setQuantity(15);
         product.setPrice(1.00);
 
         CartLine cartLine = new CartLine();
@@ -210,28 +205,33 @@ public class ProductServiceTest {
 
         when(productService.getAllProducts()).thenReturn(repositoryMock);
 
+        int ammountOfProductExistingInRepository = 20;
 
-        productService.getAllProducts().add(product);
-        productService.getAllProducts().add(product);
-        productService.getAllProducts().add(product);
-        productService.getAllProducts().add(product);
-        productService.getAllProducts().add(product);
+        for(int i = ammountOfProductExistingInRepository; i > 0; i--){
 
-        assertEquals(5, productService.getAllProducts().size());
+            productService.getAllProducts().add(product);
+        }
+
+        assertEquals(20, productService.getAllProducts().size());
+        assertEquals("Name", productService.getAllProducts().stream()
+                    .filter(p -> p.getId()==5L).findFirst().get().getName());
 
         productService.updateProductQuantities(cart);
 
         if(productService.getAllProducts().stream().filter(p -> p.getId()==5L).findFirst().get()
             != null){
-            productService.getAllProducts().remove(product);
+
+            int ammountToBeRemovedFromRepository = cart.findProductInCartLines(product.getId()).getQuantity();
+
+            for(int i = ammountToBeRemovedFromRepository; i > 0 ; i--) {
+                productService.getAllProducts().remove(product);
+            }
         }
 
-        assertEquals(4,productService.getAllProducts().size());
-        assertEquals(1, orderList.size());
+        assertEquals(5, productService.getAllProducts().size());
+        assertEquals(15, cart.findProductInCartLines(product.getId()).getQuantity());
         assertEquals(product, cart.findProductInCartLines(5L));
-        assertEquals(10, cart.findProductInCartLines(5L).getQuantity());
-
-
+        assertEquals("Name", productService.getAllProducts().get(0).getName());
         /*updateProductQuantities(Cart cart) {
 
             for (CartLine cartLine : cart.getCartLineList()) {
