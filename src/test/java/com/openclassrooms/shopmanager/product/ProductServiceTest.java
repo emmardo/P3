@@ -125,7 +125,7 @@ public class ProductServiceTest {
 
     }
 
-    /*@Test
+    @Test
     public void deleteProduct_DbHasData_allDataReturned(){
 
         ProductModel productModel1 = new ProductModel();
@@ -165,7 +165,6 @@ public class ProductServiceTest {
         list.add(product2);
 
         when(productRepository.findAll()).thenReturn(list);
-        *//*when(productService.deleteProduct(1L)).thenReturn(list.remove(product1));*//*
 
         productService.createProduct(productModel1);
         productService.createProduct(productModel2);
@@ -173,16 +172,17 @@ public class ProductServiceTest {
         assertEquals(2,productRepository.findAll().size());
 
         productService.deleteProduct(1L);
+        list.remove(product1);
 
-        assertEquals(1,productService.getAllProducts().size());
-    }*/
+        assertEquals(1,productRepository.findAll().size());
+    }
 
     @Test
     public void updateProductQuantities_DbHasData_allDataReturned(){
 
     }
 
-   /* @Test
+    /*@Test
     public void getMissingNameErrorMessage_HasData_ReturnsErrorMessage(){
         //Arrange
         String expectedMessage = "NotBlank.name";
