@@ -23,7 +23,6 @@ public class ProductService {
         this.productRepository = repository;
     }
 
-
     /**
      * @return all products from the inventory
      */

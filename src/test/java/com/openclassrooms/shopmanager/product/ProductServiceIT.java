@@ -1,25 +1,19 @@
 package com.openclassrooms.shopmanager.product;
 
-import com.openclassrooms.shopmanager.order.Cart;
-import com.openclassrooms.shopmanager.order.CartLine;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.List;
-
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.when;
 
 public class ProductServiceIT {
 
-    private ProductRepository productRepository;
+    private final ProductRepository productRepository;
 
     private ProductService productService;
 
-    public ProductServiceIT(ProductRepository productRepository/*, ProductService productService*/) {
+    private ProductServiceIT(ProductService productService, ProductRepository productRepository){
 
         this.productRepository = productRepository;
-        /*this.productService = productService;*/
+        this.productService = productService;
     }
 
     @Test
@@ -34,8 +28,10 @@ public class ProductServiceIT {
         productModel.setQuantity("50");
         productModel.setId(1L);
 
-        productService.createProduct(productModel);
+        productService
+                .createProduct(productModel);
 
         assertEquals("Name", productService.getByProductId(1L).getName());
     }
+
 }
