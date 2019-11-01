@@ -22,9 +22,6 @@ public class OrderServiceTest {
     @InjectMocks
     OrderRepository orderRepository;
 
-    @Mock
-    OrderService orderService;
-
     @Test
     public void addProductToCart_jfnfh_dfdjdj() {
 
