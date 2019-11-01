@@ -2,36 +2,37 @@ package com.openclassrooms.shopmanager.product;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.InjectMocks;
-import org.mockito.Mock;
-import org.mockito.junit.MockitoJUnitRunner;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.web.context.WebApplicationContext;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.when;
-
-@RunWith(MockitoJUnitRunner.class)
+@SpringBootTest
+@RunWith(SpringRunner.class)
 public class ProductServiceIT {
 
-    @InjectMocks
-    ProductService productService;
+    private WebApplicationContext webApplicationContext;
 
-    @Mock
-    ProductRepository productRepository;
+    private MockMvc mockMvc;
 
     @Test
-    public void createProduct_TwoProductsCreated_ProductsNamesObtained() {
+    public void createProduct_sdgsdg_sadfsdf() throws Exception {
 
-        ProductModel productModel = new ProductModel();
+        mockMvc.perform(post("/admin/product").param("name", "name1")
+                .param("price", "1.00").param("quantity", "10"))
+                .andExpect(model().errorCount(0)).andExpect(status().is3xxRedirection());
+
+        /*ProductModel productModel = new ProductModel();
 
         productModel.setDescription("Description");
         productModel.setDetails("Detail");
         productModel.setName("Name");
         productModel.setPrice("1.00");
-        productModel.setQuantity("10");
+        productModel.setQuantity("100");
 
         Product product = new Product();
         product.setDescription(productModel.getDescription());
@@ -47,12 +48,12 @@ public class ProductServiceIT {
 
         productService.createProduct(productModel);
 
-        assertEquals(productService.getAllProducts().stream().filter(productInstance ->
+        assertEquals( productService.getAllProducts().stream().filter(productInstance ->
                 productInstance.getName()=="Name").findFirst().get()
-                .getName(),"Name");
-        assertEquals(productService.getAllProducts().stream().filter(productInstance ->
+                .getName(), "Name");
+        assertEquals( productService.getAllProducts().stream().filter(productInstance ->
                 productInstance.getQuantity()==10).findFirst().get()
-                .getQuantity(),10);
+                .getQuantity(), 100);*/
 
         /*ProductModel productModel = new ProductModel();
 
@@ -80,6 +81,14 @@ public class ProductServiceIT {
 
         assertEquals("Name", productService.getByProductId(1L).getName());*/
 
+
     }
 
+    @Test
+    public void createProductWithEmptySpaces_mffnfn_djdjdjd() throws Exception {
+
+        mockMvc.perform(post("/admin/product").param("name", " ")
+                .param("price", " ").param("quantity", " "))
+                .andExpect(model().errorCount(3)).andExpect(status().isOk());
+    }
 }
