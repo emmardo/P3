@@ -1,10 +1,13 @@
 package com.openclassrooms.shopmanager.product;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
@@ -15,9 +18,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 public class ProductServiceIT {
 
+    @Autowired
     private WebApplicationContext webApplicationContext;
 
     private MockMvc mockMvc;
+
+    @Before
+    public void MockMvc() {
+
+        mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();
+    }
 
     @Test
     public void createProduct_sdgsdg_sadfsdf() throws Exception {
@@ -89,6 +99,14 @@ public class ProductServiceIT {
 
         mockMvc.perform(post("/admin/product").param("name", " ")
                 .param("price", " ").param("quantity", " "))
+                .andExpect(model().errorCount(3)).andExpect(status().isOk());
+    }
+
+    @Test
+    public void createProductWithNonValidValues_ndjdhd_jsjsjhsj() throws Exception {
+
+        mockMvc.perform(post("/admin/product").param("name", " ")
+                .param("price", "-").param("quantity", "-"))
                 .andExpect(model().errorCount(3)).andExpect(status().isOk());
     }
 }

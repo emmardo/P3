@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceIT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceIT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceIT.class" afterDir="false" />
@@ -80,22 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductServiceIT.createProduct_sdgsdg_sadfsdf">
-    <configuration name="ProductServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="P3_AddNewFunctionalitySpringBoot" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
-      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProductServiceIT.createProductWithNonValidValues_ndjdhd_jsjsjhsj">
     <configuration name="ProductServiceIT.createProductWithEmptySpaces_mffnfn_djdjdjd" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
@@ -107,6 +93,22 @@
       <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
       <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
       <option name="METHOD_NAME" value="createProductWithEmptySpaces_mffnfn_djdjdjd" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceIT.createProductWithNonValidValues_ndjdhd_jsjsjhsj" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="P3_AddNewFunctionalitySpringBoot" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.openclassrooms.shopmanager.product.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.openclassrooms.shopmanager.product" />
+      <option name="MAIN_CLASS_NAME" value="com.openclassrooms.shopmanager.product.ProductServiceIT" />
+      <option name="METHOD_NAME" value="createProductWithNonValidValues_ndjdhd_jsjsjhsj" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -169,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductServiceIT.createProduct_sdgsdg_sadfsdf" />
+        <item itemvalue="JUnit.ProductServiceIT.createProductWithNonValidValues_ndjdhd_jsjsjhsj" />
         <item itemvalue="JUnit.ProductServiceIT.createProductWithEmptySpaces_mffnfn_djdjdjd" />
+        <item itemvalue="JUnit.ProductServiceIT.createProduct_sdgsdg_sadfsdf" />
         <item itemvalue="JUnit.ProductServiceIT.createProduct_TwoProductsCreated_ProductsNamesObtained" />
         <item itemvalue="JUnit.ProductServiceTest.createProduct_DbHasData_allDataReturned" />
-        <item itemvalue="JUnit.ProductServiceIT" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +249,8 @@
       <workItem from="1572455656066" duration="41000" />
       <workItem from="1572474270974" duration="5308000" />
       <workItem from="1572524949188" duration="599000" />
-      <workItem from="1572565079649" duration="6034000" />
+      <workItem from="1572565079649" duration="6288000" />
+      <workItem from="1572616109634" duration="1372000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -347,7 +350,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572568943759</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="made the first part on the IT test work">
+      <created>1572571356390</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572571356390</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
