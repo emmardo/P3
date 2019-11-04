@@ -200,9 +200,9 @@ public class ProductServiceTest {
 
         when(productService.getAllProducts()).thenReturn(repositoryMock);
 
-        int ammountOfProductExistingInRepository = 20;
+        int amountOfProductExistingInRepository = 20;
 
-        for(int i = ammountOfProductExistingInRepository; i > 0; i--){
+        for(int i = amountOfProductExistingInRepository; i > 0; i--){
 
             productService.getAllProducts().add(product);
         }
@@ -216,9 +216,9 @@ public class ProductServiceTest {
         if(productService.getAllProducts().stream().filter(p -> p.getId()==5L).findFirst().get()
             != null){
 
-            int ammountToBeRemovedFromRepository = cart.findProductInCartLines(product.getId()).getQuantity();
+            int amountToBeRemovedFromRepository = cart.findProductInCartLines(product.getId()).getQuantity();
 
-            for(int i = ammountToBeRemovedFromRepository; i > 0 ; i--) {
+            for(int i = amountToBeRemovedFromRepository; i > 0 ; i--) {
                 productService.getAllProducts().remove(product);
             }
         }
