@@ -55,23 +55,24 @@ public class OrderController {
     @PostMapping("/order")
     public String createOrder(@Valid @ModelAttribute("order") Order order, BindingResult result)
     {
+
         if (orderService.isCartEmpty()){
             result.reject("cart.empty");
         }
 
-        if (order.getName().isEmpty()) {
+        if (order.getName() == null || order.getName().isEmpty()) {
             result.reject("NotBlank.name");
         }
 
-        if (order.getAddress().isEmpty()) {
+        if (order.getAddress() == null || order.getAddress().isEmpty()) {
             result.reject("NotBlank.address");
         }
 
-        if (order.getCity().isEmpty()) {
+        if (order.getCity() == null || order.getCity().isEmpty()) {
             result.reject("NotBlank.city");
         }
 
-        if (order.getCountry().isEmpty()) {
+        if (order.getCountry() == null || order.getCountry().isEmpty()) {
             result.reject("NotBlank.country");
         }
 

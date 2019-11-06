@@ -83,7 +83,7 @@ public class OrderServiceIT {
                 .andExpect(status().is3xxRedirection());
 
         mockMvc.perform(post("/order").param("id", "1"))
-                .andExpect(status().is5xxServerError());
+                .andExpect(status().isOk());
     }
 
     @Test
@@ -93,6 +93,6 @@ public class OrderServiceIT {
                 .andExpect(status().is3xxRedirection());
 
         mockMvc.perform(post("/order").param("id", "1"))
-                .andExpect(status().is5xxServerError());
+                .andExpect(status().isOk());
     }
 }

@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/order/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceIT.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceIT.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceIT.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +57,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../DISCO D/eclipse-workspace/P2Lambazon" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../DISCO D/eclipse-workspace/p5 - Corrected/p5" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -83,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceIT.createOrder">
+  <component name="RunManager" selected="JUnit.OrderServiceIT">
     <configuration name="OrderServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
@@ -171,10 +168,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OrderServiceIT" />
         <item itemvalue="JUnit.OrderServiceIT.createOrder" />
         <item itemvalue="JUnit.OrderServiceIT.createOrderError" />
         <item itemvalue="JUnit.ProductServiceIT" />
-        <item itemvalue="JUnit.OrderServiceIT" />
         <item itemvalue="JUnit.ProductServiceIT.createProductWithNonValidValues_ndjdhd_jsjsjhsj" />
       </list>
     </recent_temporary>
@@ -252,7 +249,8 @@
       <workItem from="1572565079649" duration="6288000" />
       <workItem from="1572616109634" duration="3136000" />
       <workItem from="1572729427288" duration="5187000" />
-      <workItem from="1572872638549" duration="1368000" />
+      <workItem from="1572872638549" duration="3004000" />
+      <workItem from="1572947696997" duration="5484000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -366,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572618852842</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Almost finished everything">
+      <created>1572882162469</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1572882162469</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +403,8 @@
     <MESSAGE value="Working on the first IT test" />
     <MESSAGE value="Started working on ProductServiceIT" />
     <MESSAGE value="made the first part on the IT test work" />
-    <option name="LAST_COMMIT_MESSAGE" value="made the first part on the IT test work" />
+    <MESSAGE value="Almost finished everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="Almost finished everything" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
