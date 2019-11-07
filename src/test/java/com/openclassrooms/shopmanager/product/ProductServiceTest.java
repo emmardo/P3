@@ -231,7 +231,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void setErrorMessages_jdjhdjd_jnjdjd() {
+    public void setErrorMessages_DbHasData_allDataReturned() {
 
         HashMap<String, String> errorMessages = new HashMap<>();
 
@@ -248,7 +248,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void getErrorMessage_ndndhnd_hshshs() {
+    public void getErrorMessage_DbHasData_allDataReturned() {
 
         String key;
 

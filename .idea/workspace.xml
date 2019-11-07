@@ -3,14 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/order/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/order/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myFlattenPackages" value="true" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -29,6 +31,10 @@
   <component name="DefaultGradleProjectSettings">
     <option name="testRunner" value="GRADLE" />
     <option name="delegatedBuild" value="true" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../../../../../DISCO D/eclipse-workspace/p5 - Corrected/Coverage Report" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -57,7 +63,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../DISCO D/eclipse-workspace/p5 - Corrected/p5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../DISCO D/eclipse-workspace/p5 - Corrected/Coverage Report" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -80,7 +86,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderServiceIT">
+  <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="OrderServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="P3_AddNewFunctionalitySpringBoot" />
       <extension name="coverage">
@@ -250,7 +256,9 @@
       <workItem from="1572616109634" duration="3136000" />
       <workItem from="1572729427288" duration="5187000" />
       <workItem from="1572872638549" duration="3004000" />
-      <workItem from="1572947696997" duration="5484000" />
+      <workItem from="1572947696997" duration="5738000" />
+      <workItem from="1573076635750" duration="1604000" />
+      <workItem from="1573134375758" duration="675000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -371,7 +379,21 @@
       <option name="project" value="LOCAL" />
       <updated>1572882162469</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Code and Tests pass. Final check needed">
+      <created>1573058353502</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1573058353502</updated>
+    </task>
+    <task id="LOCAL-00019" summary="P3 all finished">
+      <created>1573058566950</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1573058566950</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -404,7 +426,9 @@
     <MESSAGE value="Started working on ProductServiceIT" />
     <MESSAGE value="made the first part on the IT test work" />
     <MESSAGE value="Almost finished everything" />
-    <option name="LAST_COMMIT_MESSAGE" value="Almost finished everything" />
+    <MESSAGE value="Code and Tests pass. Final check needed" />
+    <MESSAGE value="P3 all finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="P3 all finished" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -412,5 +436,8 @@
         <watch expression="this" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/P3_AddNewFunctionalitySpringBoot$Application.ic" NAME="Application Coverage Results" MODIFIED="1573077475424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
