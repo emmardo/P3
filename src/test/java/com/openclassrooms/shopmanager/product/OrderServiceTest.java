@@ -23,7 +23,7 @@ public class OrderServiceTest {
     OrderRepository orderRepository;
 
     @Test
-    public void addProductToCart_jfnfh_dfdjdj() {
+    public void addProductToCart() {
 
         boolean value;
 
@@ -31,9 +31,7 @@ public class OrderServiceTest {
 
         Product product1 = new Product();
 
-        /*product1 = product;*/
 
-        /*Product product2 = new Product();*/
         product1.setId(id);
 
         List<Product> list = new ArrayList<>();
@@ -41,8 +39,6 @@ public class OrderServiceTest {
         list.add(product1);
 
         when(productService.getAllProducts()).thenReturn(list);
-
-        /*product1 = productService.getAllProducts().get(0);*/
 
         when(productService.getByProductId(id)).thenReturn(product1);
 
@@ -55,17 +51,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void saverOrder_jfjf_jfjnf() {
-
-        /*ProductModel productModel = new ProductModel();
-
-        productModel.setDescription("Description");
-        productModel.setDetails("Detail");
-        productModel.setName("Name");
-        productModel.setPrice("1.00");
-        productModel.setQuantity("10");
-
-        productService.createProduct(productModel);*/
+    public void saverOrder() {
 
         Order order1 = new Order();
 
@@ -101,7 +87,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void removeProductFromCart_jshshs_jdjdjd() {
+    public void removeProductFromCart() {
 
         Product productInstance = new Product();
         productInstance.setId(5L);
@@ -134,7 +120,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void createOrder_dhdjdj_jsjsjsj() {
+    public void createOrder() {
 
         Order order1 = new Order();
 

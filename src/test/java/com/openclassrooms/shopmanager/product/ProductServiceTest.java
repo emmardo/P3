@@ -74,7 +74,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void getByProductId_DbHasData_allDataReturned() {
+    public void getByProductId_DbHasData_ProductReturned() {
 
         Product expectedProduct = new Product();
         expectedProduct.setId(1L);
@@ -90,7 +90,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void createProduct_DbHasData_allDataReturned() {
+    public void createProduct_DbHasData_ProductCreated() {
 
         ProductModel productModel = new ProductModel();
 
@@ -124,7 +124,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void deleteProduct_DbHasData_allDataReturned() {
+    public void deleteProduct_DbHasData_ProductDeleted() {
 
         ProductModel productModel1 = new ProductModel();
 
@@ -176,7 +176,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void updateProductQuantities_DbHasData_allDataReturned() {
+    public void updateProductQuantities_DbHasData_QuantitiesUpdated() {
 
         List<Product> repositoryMock = new ArrayList<>();
 
@@ -231,7 +231,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void setErrorMessages_DbHasData_allDataReturned() {
+    public void setErrorMessages_DbHasData_ErrorMessagesSet() {
 
         HashMap<String, String> errorMessages = new HashMap<>();
 
@@ -248,7 +248,7 @@ public class ProductServiceTest {
     }
 
     @Test
-    public void getErrorMessage_DbHasData_allDataReturned() {
+    public void getErrorMessage_DbHasData_ErrorMessageReturned() {
 
         String key;
 

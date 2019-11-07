@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/ProductServiceTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -258,7 +258,7 @@
       <workItem from="1572872638549" duration="3004000" />
       <workItem from="1572947696997" duration="5738000" />
       <workItem from="1573076635750" duration="1604000" />
-      <workItem from="1573134375758" duration="675000" />
+      <workItem from="1573134375758" duration="1071000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -393,7 +393,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573058566950</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="P3 all finished">
+      <created>1573135240465</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573135240465</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
