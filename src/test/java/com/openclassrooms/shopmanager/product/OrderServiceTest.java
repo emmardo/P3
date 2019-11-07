@@ -23,7 +23,7 @@ public class OrderServiceTest {
     OrderRepository orderRepository;
 
     @Test
-    public void addProductToCart() {
+    public void addProductToCart_DbHasData_ProductAdded() {
 
         boolean value;
 
@@ -51,7 +51,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void saverOrder() {
+    public void saverOrder_DbHasData_OrderSaved() {
 
         Order order1 = new Order();
 
@@ -87,7 +87,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void removeProductFromCart() {
+    public void removeProductFromCart_DbHasData_ProductRemovedFromCart() {
 
         Product productInstance = new Product();
         productInstance.setId(5L);
@@ -120,7 +120,7 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void createOrder() {
+    public void createOrder_DbHasData_OrderCreated() {
 
         Order order1 = new Order();
 
