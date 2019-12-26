@@ -2,7 +2,6 @@ package com.openclassrooms.shopmanager.product;
 
 import com.openclassrooms.shopmanager.order.Cart;
 import com.openclassrooms.shopmanager.order.CartLine;
-import com.openclassrooms.shopmanager.order.OrderService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +13,7 @@ import java.util.Optional;
 
 @Service
 public class ProductService {
+
     private static final Logger log = LoggerFactory.getLogger(ProductService.class);
 
     private ProductRepository productRepository;
@@ -51,7 +51,6 @@ public class ProductService {
         productRepository.save(product);
     }
 
-    /*private OrderService orderService;*/
 
     public void deleteProduct(Long productId) {
 

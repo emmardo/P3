@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="343dcef2-82b5-45f5-9d4c-c7f2674ef40b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/openclassrooms/shopmanager/product/OrderServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/P3_AddNewFunctionalitySpringBoot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/P3_AddNewFunctionalitySpringBoot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/openclassrooms/shopmanager/product/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/openclassrooms/shopmanager/product/ProductServiceTest.class" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,7 +37,7 @@
   </component>
   <component name="ExportToHTMLSettings">
     <option name="OPEN_IN_BROWSER" value="true" />
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../../../../../DISCO D/eclipse-workspace/p5 - Corrected/Coverage Report" />
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/DISCO D/eclipse-workspace/p5 - Corrected/Coverage Report" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,6 +58,11 @@
   </component>
   <component name="ProjectId" id="1PO4cVHjJJH2mmDtyxyorhcRlVZ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
@@ -62,7 +71,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../DISCO D/eclipse-workspace/p5 - Corrected/Coverage Report" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Alex/P3WellTestedFunctionalityJavaFuturesHope" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -72,18 +81,6 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
     <configuration name="OrderServiceIT" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -181,6 +178,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -257,7 +266,18 @@
       <workItem from="1572872638549" duration="3004000" />
       <workItem from="1572947696997" duration="5738000" />
       <workItem from="1573076635750" duration="1604000" />
-      <workItem from="1573134375758" duration="1351000" />
+      <workItem from="1573134375758" duration="2165000" />
+      <workItem from="1575312575646" duration="640000" />
+      <workItem from="1575313767345" duration="81000" />
+      <workItem from="1575632088185" duration="11000" />
+      <workItem from="1576625784230" duration="1416000" />
+      <workItem from="1576628568537" duration="1576000" />
+      <workItem from="1576685315966" duration="1235000" />
+      <workItem from="1577057059776" duration="720000" />
+      <workItem from="1577194074165" duration="564000" />
+      <workItem from="1577382001638" duration="1270000" />
+      <workItem from="1577383510514" duration="4479000" />
+      <workItem from="1577400585745" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="Keep working on bugs in ProductService and ProductController">
       <created>1572121219601</created>
@@ -406,7 +426,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573135500953</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="P3 all finished">
+      <created>1573135731848</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1573135731848</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,6 +470,41 @@
     <MESSAGE value="P3 all finished" />
     <option name="LAST_COMMIT_MESSAGE" value="P3 all finished" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="546" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1575312617535">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="546" y="288" width="308" height="216" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/45.27.1321.741@45.27.1321.741" timestamp="1575312617535" />
+    <state x="388" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1577382008558">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="388" y="124" width="624" height="544" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/45.27.1321.741@45.27.1321.741" timestamp="1577382008558" />
+    <state x="121" y="27" width="1159" height="741" key="CommitChangelistDialog2" timestamp="1577401242923">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="121" y="27" width="1159" height="741" key="CommitChangelistDialog2/45.27.1321.741@45.27.1321.741" timestamp="1577401242923" />
+    <state x="493" y="151" width="424" height="484" key="FileChooserDialogImpl" timestamp="1577396664752">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1576686628862" />
+    <state x="493" y="151" width="424" height="484" key="FileChooserDialogImpl/45.27.1321.741@45.27.1321.741" timestamp="1577396664752" />
+    <state width="1275" height="174" key="GridCell.Tab.0.bottom" timestamp="1577400865552">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state width="1275" height="174" key="GridCell.Tab.0.bottom/45.27.1321.741@45.27.1321.741" timestamp="1577400865552" />
+    <state width="1275" height="174" key="GridCell.Tab.0.center" timestamp="1577400865551">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state width="1275" height="174" key="GridCell.Tab.0.center/45.27.1321.741@45.27.1321.741" timestamp="1577400865551" />
+    <state width="1275" height="174" key="GridCell.Tab.0.left" timestamp="1577400865551">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state width="1275" height="174" key="GridCell.Tab.0.left/45.27.1321.741@45.27.1321.741" timestamp="1577400865551" />
+    <state width="1275" height="174" key="GridCell.Tab.0.right" timestamp="1577400865551">
+      <screen x="45" y="27" width="1321" height="741" />
+    </state>
+    <state width="1275" height="174" key="GridCell.Tab.0.right/45.27.1321.741@45.27.1321.741" timestamp="1577400865551" />
+  </component>
   <component name="XDebuggerManager">
     <watches-manager>
       <configuration name="JUnit">
@@ -451,6 +513,6 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/P3_AddNewFunctionalitySpringBoot$Application.ic" NAME="Application Coverage Results" MODIFIED="1573077475424" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/P3_AddNewFunctionalitySpringBoot$Application.ic" NAME="Application Coverage Results" MODIFIED="1573135896115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
